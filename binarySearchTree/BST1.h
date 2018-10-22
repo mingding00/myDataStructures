@@ -13,7 +13,7 @@ public:
 	BST1() :size(0), root(NULL) {};
 	int getSize()const { return size; }
 	bool empty()const { return size == 0; }
-	void add(T e) { add(root, e); size++; }
+	void add(T e) { add(root, e);}
 	void addNoReturn(T e) { addNoReturn(root, e); size++; }
 	bool contains(T e)const { return contains(root, e); }
 	void preOrder()const { preOrder(root); }
@@ -50,6 +50,7 @@ template<typename T>
 treeNode<T>* BST1<T>::add(treeNode<T>*& node, T e) {
 	if (node == nullptr) {
 		node=new treeNode<T>(e);
+		size++;
 		return node;
 	}
 	else
@@ -63,8 +64,10 @@ treeNode<T>* BST1<T>::add(treeNode<T>*& node, T e) {
 }
 template<typename T>
 void BST1<T>::addNoReturn(treeNode<T>* node, T e) {
-	if (node == nullptr)
-		node->element = e;
+	if (node == nullptr){
+		node = new treeNode<T>(e);
+		size++;
+	}
 	else
 	{
 		if (e > node->element)

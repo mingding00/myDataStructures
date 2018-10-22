@@ -31,7 +31,7 @@ public:
 	}
 	bool empty()const { return size == 0; }
 	int getSize()const { return size; }
-	void add(const T& e) { add(root,e); size++; }
+	void add(const T& e) { add(root,e);}
 	bool contains(const T& e) { return contains(root, e); }
 	void preOrder()const { preOrder(root); }
 	void inOrder()const { inOrder(root); }
@@ -54,6 +54,7 @@ public:
 template<typename T>
 treeNode<T>* BST<T>::add(treeNode<T>* &node, const T& e) {
 	if (node == nullptr)
+		size++;
 		return node = new treeNode<T>(e);
 	else {
 		if (e > node->element)
