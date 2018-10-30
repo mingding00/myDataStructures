@@ -20,15 +20,15 @@ private:
 	void siftUp(int k);//ÉÏ¸¡ 
 	void siftDown(int k);
 public:
-	maxHeap(int initialCapacity) :data(initialCapacity) {};
-	maxHeap() :data() {};
+	maxHeap(int initialCapacity=10) :data(initialCapacity) {};
+	//maxHeap() :data() {};
 	maxHeap(T arr[], int n) :data(arr, n) {
 		for (int i = parent(n - 1); i >= 0; i--) {
 			siftDown(i);
 		}
 	}
-	int getSize() { return data.getSize(); }
-	bool empty() { return data.empty(); }
+	int getSize()const { return data.getSize(); }
+	bool empty()const { return data.empty(); }
 	//Ìí¼ÓÔªËØ
 	void add(T e);
 	T findMax() { 
@@ -40,6 +40,7 @@ public:
 	T extractMax() {
 		T ret = findMax();
 		data.swap(0, data.getSize() - 1);
+		data.removeLast();
 		siftDown(0);
 		return ret;
 	}

@@ -1,3 +1,5 @@
 ﻿  maxHeap.cpp
-c:\users\lm\source\repos\exercise4\maxheap\maxheap.cpp(38): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+c:\users\lm\source\repos\exercise4\maxheap\solution347_2.h(11): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\lm\source\repos\exercise4\maxheap\maxheap.cpp(39): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+c:\users\lm\source\repos\exercise4\maxheap\maxheap.cpp(53): warning C4018: “<”: 有符号/无符号不匹配
   maxHeap.vcxproj -> C:\Users\LM\source\repos\exercise4\Debug\maxHeap.exe

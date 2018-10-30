@@ -36,6 +36,21 @@
     <ClInclude Include="maxHeap.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="priorityQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="minHeap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="solution347.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="solution347_2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
